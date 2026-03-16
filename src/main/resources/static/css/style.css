@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.table thead th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f4ff;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+}
+
+.footer {
+    font-size: 0.82rem;
+}
