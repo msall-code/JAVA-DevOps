@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: msallcode6996/product-service:latest
+          tags: msall6996/product-service:latest
