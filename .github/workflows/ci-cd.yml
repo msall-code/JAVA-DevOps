@@ -1,3 +1,7 @@
+# Dans PowerShell — recrée le fichier proprement
+  cd C:\Users\HP\IdeaProjects\JAVA-DevOps-feature-product-service
+  
+  Set-Content -Path ".github\workflows\ci-cd.yml" -Encoding UTF8 -Value @'
 name: CI/CD - Product Service
 
 on:
@@ -33,3 +37,4 @@ jobs:
           context: .
           push: true
           tags: msallcode6996/product-service:latest
+  '@
