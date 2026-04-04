@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: product-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # URL pour valider les tokens
+          issuer-uri: http://localhost:7080/realms/microservices-realm
+          jwk-set-uri: http://localhost:7080/realms/microservices-realm/protocol/openid-connect/certs
+
+# Configuration personnalisée pour ton AuthController Java
+keycloak:
+  auth-server-url: http://localhost:7080
+  realm: microservices-realm
+  client-id: product-service
+  admin-user: service-admin
+  admin-password: admin123
+  resource: product-service
+  # Récupère le Secret dans Keycloak (Onglet Credentials du client)
+  client-secret: NS5HN0aGzU7UzqYCelKUK52XqAVPZ8BK
