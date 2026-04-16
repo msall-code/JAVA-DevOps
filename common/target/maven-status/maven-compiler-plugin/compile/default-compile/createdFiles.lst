@@ -1,0 +1,3 @@
+com\microservices\common\config\KeycloakRoleConverter.class
+com\microservices\common\event\OrderEvent.class
+com\microservices\common\event\OrderEvent$OrderEventBuilder.class

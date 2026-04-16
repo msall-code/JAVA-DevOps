@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  # 1. BASE DE DONNÉES (Stockage persistant)
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../common/postgres:/docker-entrypoint-initdb.d
+    networks:
+      - micro-network
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: MonNouveauMotDePasse123
+    ports:
+      - "${PGADMIN_PORT}:80"
+    depends_on:
+        - postgres
+    networks:
+        - micro-network
+
+  # 2. SÉCURITÉ (Gestion Identité)
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.0
+    container_name: keycloak
+    command: start-dev --db=postgres --db-url=jdbc:postgresql://postgres:5432/keycloak_db --db-username=${POSTGRES_USER} --db-password=${POSTGRES_PASSWORD}
+    environment:
+      KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
+    ports:
+      - "7080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - micro-network
+
+  # 3. COORDINATEUR KAFKA (Le secrétariat)
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    networks:
+      - micro-network
+
+  # 4. MESSAGE BROKER (L'autoroute de l'information)
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "29092:29092" # Port pour ton Windows/IDE
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      # IMPORTANT : On inverse ici pour que localhost utilise bien 29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    networks:
+      - micro-network
+  kafka-ui:
+    container_name: kafka-ui
+    image: provectuslabs/kafka-ui:latest
+    ports:
+      - 8090:8080
+    environment:
+      DYNAMIC_CONFIG_ENABLED: 'true'
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+    depends_on:
+      - kafka
+    networks:
+      - micro-network
+
+  # 5. CACHE & RAPIDITÉ (Le pense-bête)
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - micro-network
+
+networks:
+  micro-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

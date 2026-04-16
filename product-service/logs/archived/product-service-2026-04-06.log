@@ -1,0 +1,84 @@
+2026-04-06 19:39:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-06 19:39:07 [main] INFO  c.m.p.ProductServiceApplicationTests - Starting ProductServiceApplicationTests using Java 17.0.18 with PID 8352 (started by LENOVO in C:\Users\LENOVO\IdeaProjects\Microservices-Final\product-service)
+2026-04-06 19:39:07 [main] DEBUG c.m.p.ProductServiceApplicationTests - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-06 19:39:07 [main] INFO  c.m.p.ProductServiceApplicationTests - The following 1 profile is active: "dev"
+2026-04-06 19:39:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-06 19:39:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06 19:39:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 630 ms. Found 1 JPA repository interface.
+2026-04-06 19:39:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-06 19:39:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-06 19:39:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-06 19:39:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2026-04-06 19:39:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06 19:39:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-04-06 19:39:12 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-06 19:39:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06 19:39:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-06 19:39:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df87ffd
+2026-04-06 19:39:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-06 19:39:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06 19:39:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06 19:39:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06 19:39:18 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-06 19:39:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06 19:39:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27959c4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c023dcb, org.springframework.security.web.context.SecurityContextHolderFilter@2978d342, org.springframework.security.web.header.HeaderWriterFilter@2aafd790, org.springframework.web.filter.CorsFilter@66d0d5ee, org.springframework.security.web.authentication.logout.LogoutFilter@39e3da5a, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@413773e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@122557f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e8f20bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67aedd28, org.springframework.security.web.access.ExceptionTranslationFilter@2ea3f905, org.springframework.security.web.access.intercept.AuthorizationFilter@5ccf1542]
+2026-04-06 19:39:22 [main] INFO  c.m.p.ProductServiceApplicationTests - Started ProductServiceApplicationTests in 16.141 seconds (process running for 18.285)
+2026-04-06 19:39:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06 19:39:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-06 19:39:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-06 20:29:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-06 20:29:18 [main] INFO  c.m.p.ProductServiceApplicationTests - Starting ProductServiceApplicationTests using Java 17.0.18 with PID 5580 (started by LENOVO in C:\Users\LENOVO\IdeaProjects\Microservices-Final\product-service)
+2026-04-06 20:29:18 [main] DEBUG c.m.p.ProductServiceApplicationTests - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-06 20:29:18 [main] INFO  c.m.p.ProductServiceApplicationTests - The following 1 profile is active: "dev"
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 771 ms. Found 1 JPA repository interface.
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-06 20:29:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2026-04-06 20:29:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06 20:29:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-04-06 20:29:25 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-06 20:29:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06 20:29:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-06 20:29:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@515940af
+2026-04-06 20:29:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-06 20:29:27 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06 20:29:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06 20:29:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06 20:29:31 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-06 20:29:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06 20:29:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@113b39e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70b7fec0, org.springframework.security.web.context.SecurityContextHolderFilter@71a18feb, org.springframework.security.web.header.HeaderWriterFilter@488bf7cd, org.springframework.web.filter.CorsFilter@361eed12, org.springframework.security.web.authentication.logout.LogoutFilter@1cc9b564, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@107ac2b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c1a5092, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24663d05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73c5b676, org.springframework.security.web.access.ExceptionTranslationFilter@340b7fca, org.springframework.security.web.access.intercept.AuthorizationFilter@25767bd9]
+2026-04-06 20:29:36 [main] INFO  c.m.p.ProductServiceApplicationTests - Started ProductServiceApplicationTests in 19.012 seconds (process running for 21.285)
+2026-04-06 20:29:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06 20:29:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-06 20:29:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-06 20:30:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-04-06 20:30:37 [main] INFO  c.m.p.ProductServiceApplicationTests - Starting ProductServiceApplicationTests using Java 17.0.18 with PID 4392 (started by LENOVO in C:\Users\LENOVO\IdeaProjects\Microservices-Final\product-service)
+2026-04-06 20:30:37 [main] DEBUG c.m.p.ProductServiceApplicationTests - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-06 20:30:37 [main] INFO  c.m.p.ProductServiceApplicationTests - The following 1 profile is active: "dev"
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 265 ms. Found 1 JPA repository interface.
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.product.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-06 20:30:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2026-04-06 20:30:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06 20:30:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-04-06 20:30:42 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-06 20:30:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06 20:30:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-06 20:30:44 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@642c5bb3
+2026-04-06 20:30:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-06 20:30:44 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06 20:30:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06 20:30:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06 20:30:47 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-06 20:30:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06 20:30:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66d0d5ee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67aedd28, org.springframework.security.web.context.SecurityContextHolderFilter@122557f8, org.springframework.security.web.header.HeaderWriterFilter@4ab8c3c0, org.springframework.web.filter.CorsFilter@6c524a7f, org.springframework.security.web.authentication.logout.LogoutFilter@3bd466bd, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@27959c4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@718212ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70a9f4b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61b3de5b, org.springframework.security.web.access.ExceptionTranslationFilter@194feb27, org.springframework.security.web.access.intercept.AuthorizationFilter@794eb6e7]
+2026-04-06 20:30:50 [main] INFO  c.m.p.ProductServiceApplicationTests - Started ProductServiceApplicationTests in 13.719 seconds (process running for 16.881)
+2026-04-06 20:30:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06 20:30:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-06 20:30:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
