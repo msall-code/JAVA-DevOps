@@ -2,7 +2,9 @@ name: CI Order Service
 
 on:
   push:
-    branches: [ "main" ] # On déclenche sur main maintenant
+    branches: 
+      - "main"
+      - "feature/order-service" # Ajouté pour que ton push actuel fonctionne
 
 jobs:
   build-and-push:
@@ -20,7 +22,7 @@ jobs:
       - name: Build and Push image
         uses: docker/build-push-action@v5
         with:
-          context: . # La racine du projet (pour voir le dossier common)
-          file: ./order-service/Dockerfile # Chemin vers le Dockerfile
+          context: . 
+          file: ./order-service/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/order-service:latest
