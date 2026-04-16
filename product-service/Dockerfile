@@ -1,17 +1,21 @@
-# Stage 1: Build avec Maven
+# Stage 1: Build
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
-# On copie le pom.xml d'abord pour optimiser le cache Docker
-COPY pom.xml .
-RUN mvn dependency:go-offline
-# On copie les sources et on build
-COPY src ./src
+
+# On copie d'abord la dépendance commune
+COPY common/ /app/common/
+RUN cd /app/common && mvn clean install -DskipTests
+
+# On copie et on build le service spécifique
+# REMPLACE "order-service" par "product-service" ou "notification-service" pour les autres
+COPY order-service/ /app/order-service/
+WORKDIR /app/order-service
 RUN mvn clean package -DskipTests
 
-# Stage 2: Image finale légère
+# Stage 2: Runtime
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
-# AJUSTE LE PORT ICI (8081, 8082 ou 8083)
-EXPOSE 8081 
+# REMPLACE le chemin ici aussi selon le service
+COPY --from=build /app/order-service/target/*.jar app.jar
+EXPOSE 8081
 ENTRYPOINT ["java", "-jar", "app.jar"]
