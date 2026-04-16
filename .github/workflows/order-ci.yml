@@ -1,0 +1,26 @@
+name: CI Order Service
+
+on:
+  push:
+    branches: [ "main" ] # On déclenche sur main maintenant
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and Push image
+        uses: docker/build-push-action@v5
+        with:
+          context: . # La racine du projet (pour voir le dossier common)
+          file: ./order-service/Dockerfile # Chemin vers le Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/order-service:latest

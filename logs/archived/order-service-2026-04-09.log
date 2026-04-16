@@ -1,0 +1,1834 @@
+2026-04-09 11:31:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 11:31:26 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 19524 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 11:31:26 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 217 ms. Found 1 JPA repository interface.
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 11:31:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2026-04-09 11:31:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 11:31:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 11:31:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 11:31:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 11:31:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 11:31:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 11:31:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4360 ms
+2026-04-09 11:31:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 11:31:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49d42faf
+2026-04-09 11:31:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 11:31:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 11:31:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 11:31:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 11:31:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 11:31:34 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 11:31:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 11:31:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 11:31:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 11:31:40 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 11:31:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 11:31:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 11:31:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775734301455
+2026-04-09 11:31:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:41 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:41 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:41 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:42 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:42 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:43 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:43 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:44 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:44 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:45 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:45 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:46 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:46 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:47 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:47 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:48 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:48 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:49 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:49 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:50 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:50 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:51 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:51 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:52 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:52 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:53 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:53 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:54 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:54 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:55 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:55 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:56 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:56 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:57 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:57 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:58 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:58 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:31:59 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:31:59 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:00 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:00 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:01 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:02 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:02 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:03 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:03 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:04 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:04 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:05 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:05 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:06 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:06 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:07 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:07 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:08 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:08 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:09 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:09 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:10 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:10 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:11 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:11 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:11 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=order-service-admin-0] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+2026-04-09 11:32:11 [main] ERROR o.s.kafka.core.KafkaAdmin - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:571)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1553)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:550)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:443)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:276)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.microservices.order.OrderServiceApplication.main(OrderServiceApplication.java:11)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:553)
+	... 16 common frames omitted
+2026-04-09 11:32:12 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:12 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:13 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:13 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:14 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:14 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:15 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:15 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:16 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:16 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:17 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:17 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:18 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:18 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:19 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:19 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:20 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:32:20 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=order-service-admin-0] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] Timed out 2 remaining operation(s) during close.
+2026-04-09 11:32:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 11:32:21 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 11:32:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 11:32:21 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 56.175 seconds (process running for 57.632)
+2026-04-09 11:37:34 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-09 11:37:34 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-09 11:37:34 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-09 11:37:35 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 11:37:35 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 11:37:45 [http-nio-8082-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 11:37:45 [http-nio-8082-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 134
+2026-04-09 11:38:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 11:38:28 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 17080 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 11:38:28 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 232 ms. Found 1 JPA repository interface.
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 11:38:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2026-04-09 11:38:31 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 11:38:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 11:38:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 11:38:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 11:38:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 11:38:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 11:38:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3891 ms
+2026-04-09 11:38:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 11:38:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7de3206d
+2026-04-09 11:38:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 11:38:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 11:38:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 11:38:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 11:38:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 11:38:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 11:38:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 11:38:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 11:38:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 11:38:41 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 11:38:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 11:38:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 11:38:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775734722411
+2026-04-09 11:38:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:42 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:42 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:42 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:43 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:43 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:43 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:43 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:44 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:44 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:45 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:45 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:46 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:46 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:47 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:47 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:48 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:48 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:49 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:49 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:50 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:50 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:51 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:51 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:52 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:52 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:53 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:53 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:54 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:54 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:55 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:55 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:56 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:56 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:57 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:57 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:58 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:58 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:38:59 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:38:59 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:00 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:00 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:01 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:01 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:03 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:03 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:04 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:04 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:04 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:04 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:05 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:05 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:06 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:06 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:07 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:07 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:08 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:08 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:09 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:09 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:10 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:10 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:11 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:11 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:12 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=order-service-admin-0] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+2026-04-09 11:39:12 [main] ERROR o.s.kafka.core.KafkaAdmin - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:571)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1553)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:550)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:443)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:276)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.microservices.order.OrderServiceApplication.main(OrderServiceApplication.java:11)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:553)
+	... 16 common frames omitted
+2026-04-09 11:39:12 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:12 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:13 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:13 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:14 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:14 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:15 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:15 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:16 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:16 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:17 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:17 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:18 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:18 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:19 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:19 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:20 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:20 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Node -1 disconnected.
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=order-service-admin-0] Connection to node -1 (localhost/127.0.0.1:29092) could not be established. Node may not be available.
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=order-service-admin-0] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] Timed out 2 remaining operation(s) during close.
+2026-04-09 11:39:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 11:39:22 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 11:39:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 11:39:22 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 55.467 seconds (process running for 56.916)
+2026-04-09 11:46:43 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-09 11:46:43 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-09 11:46:43 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-09 11:46:43 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 11:46:43 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 12:14:21 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 12:14:21 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 12:19:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 12:19:58 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 32300 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 12:19:58 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 12:20:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 12:20:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 12:20:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 264 ms. Found 1 JPA repository interface.
+2026-04-09 12:20:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 12:20:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 12:20:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 12:20:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2026-04-09 12:20:01 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 12:20:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 12:20:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 12:20:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 12:20:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 12:20:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 12:20:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4106 ms
+2026-04-09 12:20:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 12:20:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@657b3b
+2026-04-09 12:20:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 12:20:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 12:20:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 12:20:05 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 12:20:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 12:20:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 12:20:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 12:20:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 12:20:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 12:20:12 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 12:20:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 12:20:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 12:20:13 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775737213479
+2026-04-09 12:20:14 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 12:20:16 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 12:20:16 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 12:20:16 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 12:20:16 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 12:20:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 12:20:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 12:20:16 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 18.796 seconds (process running for 20.202)
+2026-04-09 12:21:59 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-09 12:21:59 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-09 12:21:59 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-09 12:21:59 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 12:21:59 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 12:22:29 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 12:22:29 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 12:29:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 12:29:40 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 15904 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 12:29:40 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 12:29:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 12:29:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 12:29:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 244 ms. Found 1 JPA repository interface.
+2026-04-09 12:29:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 12:29:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 12:29:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 12:29:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-04-09 12:29:43 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 12:29:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 12:29:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 12:29:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 12:29:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 12:29:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 12:29:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3861 ms
+2026-04-09 12:29:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 12:29:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bb0e277
+2026-04-09 12:29:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 12:29:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 12:29:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 12:29:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 12:29:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 12:29:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 12:29:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 12:29:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 12:29:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 12:29:53 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 12:29:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 12:29:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 12:29:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775737794120
+2026-04-09 12:29:54 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 12:29:54 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 12:29:54 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 12:29:54 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 12:29:54 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 12:29:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 12:29:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 12:29:55 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 15.311 seconds (process running for 16.719)
+2026-04-09 13:33:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 13:33:59 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 10680 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 13:33:59 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 260 ms. Found 1 JPA repository interface.
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 13:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2026-04-09 13:34:02 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 13:34:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 13:34:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 13:34:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 13:34:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 13:34:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 13:34:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4005 ms
+2026-04-09 13:34:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 13:34:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32b112a1
+2026-04-09 13:34:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 13:34:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 13:34:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 13:34:05 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 13:34:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 13:34:06 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 13:34:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 13:34:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 13:34:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 13:34:12 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 13:34:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 13:34:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 13:34:12 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775741652806
+2026-04-09 13:34:13 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 13:34:15 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 13:34:15 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 13:34:15 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 13:34:15 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 13:34:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 13:34:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 13:34:15 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 17.783 seconds (process running for 19.069)
+2026-04-09 13:34:47 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-09 13:34:47 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-09 13:34:47 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-09 13:34:48 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 13:34:48 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 13:56:37 [http-nio-8082-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 13:56:37 [http-nio-8082-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "orders" does not exist
+  Position : 13
+2026-04-09 14:07:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 14:07:29 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 1728 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 14:07:29 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 257 ms. Found 1 JPA repository interface.
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 14:07:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-04-09 14:07:32 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 14:07:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 14:07:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:07:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 14:07:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 14:07:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 14:07:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4475 ms
+2026-04-09 14:07:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 14:07:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d913116
+2026-04-09 14:07:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 14:07:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 14:07:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 14:07:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 14:07:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 14:07:37 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 14:07:38 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 14:07:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 14:07:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 14:07:44 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 14:07:45 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 14:07:45 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 14:07:45 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775743665239
+2026-04-09 14:07:46 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 14:07:46 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 14:07:46 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 14:07:46 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 14:07:46 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 14:07:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:07:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 14:07:46 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 18.39 seconds (process running for 19.961)
+2026-04-09 14:10:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 14:10:34 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 27616 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 14:10:34 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 349 ms. Found 1 JPA repository interface.
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 14:10:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-04-09 14:10:37 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 14:10:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 14:10:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:10:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 14:10:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 14:10:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 14:10:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4367 ms
+2026-04-09 14:10:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 14:10:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4948daec
+2026-04-09 14:10:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 14:10:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 14:10:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 14:10:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 14:10:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 14:10:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 14:10:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 14:10:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 14:10:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 14:10:49 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 14:10:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 14:10:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 14:10:50 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775743850305
+2026-04-09 14:10:51 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 14:10:51 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 14:10:51 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 14:10:51 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 14:10:51 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 14:10:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:10:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 14:10:51 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 18.523 seconds (process running for 20.076)
+2026-04-09 14:13:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 14:13:43 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 28804 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 14:13:43 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 14:13:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:13:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 14:13:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.
+2026-04-09 14:13:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:13:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 14:13:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 14:13:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2026-04-09 14:13:46 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 14:13:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 14:13:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:13:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 14:13:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 14:13:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 14:13:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4265 ms
+2026-04-09 14:13:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 14:13:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4948daec
+2026-04-09 14:13:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 14:13:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 14:13:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 14:13:50 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 14:13:51 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 14:13:51 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 14:13:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 14:13:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 14:13:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 14:13:59 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 14:14:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 14:14:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 14:14:00 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775744039994
+2026-04-09 14:14:01 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 14:14:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 14:14:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 14:14:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 14:14:01 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 14:14:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:14:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 14:14:01 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 18.981 seconds (process running for 20.484)
+2026-04-09 14:15:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 14:15:26 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 17.0.12 with PID 10056 (C:\Users\HP\IdeaProjects\Microservices-Final\order-service\target\classes started by HP in C:\Users\HP\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 14:15:26 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 303 ms. Found 1 JPA repository interface.
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 14:15:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-04-09 14:15:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 14:15:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 14:15:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:15:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 14:15:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 14:15:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 14:15:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4516 ms
+2026-04-09 14:15:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 14:15:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c573229
+2026-04-09 14:15:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 14:15:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 14:15:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 14:15:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 14:15:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 14:15:34 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 14:15:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 14:15:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 14:15:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 14:15:41 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 14:15:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 14:15:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 14:15:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775744142071
+2026-04-09 14:15:42 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 14:15:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 14:15:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 14:15:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 14:15:42 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 14:15:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 14:15:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 14:15:42 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 17.379 seconds (process running for 18.841)
+2026-04-09 20:44:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 20:44:12 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.10 with PID 12940 (C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes started by LENOVO in C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 20:44:12 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 20:44:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 20:44:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 20:44:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 706 ms. Found 1 JPA repository interface.
+2026-04-09 20:44:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 20:44:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 20:44:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 20:44:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2026-04-09 20:44:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 20:44:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 20:44:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 20:44:19 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 20:44:19 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 20:44:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 20:44:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6975 ms
+2026-04-09 20:44:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 20:44:21 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1805ec96
+2026-04-09 20:44:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 20:44:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 20:44:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 20:44:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 20:44:22 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 20:44:23 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 20:44:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 20:44:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 20:44:27 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 20:44:27 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes\com\microservices\order\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService' defined in file [C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes\com\microservices\order\service\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.microservices.order.mappeur.OrderMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-04-09 20:44:27 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:267)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:460)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1163)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:668)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:625)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:584)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:640)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.microservices.order.OrderServiceApplication.main(OrderServiceApplication.java:11)
+2026-04-09 20:44:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 20:44:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-09 20:44:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-09 20:44:27 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-09 20:44:27 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-09 20:44:27 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.microservices.order.service.OrderService required a bean of type 'com.microservices.order.mappeur.OrderMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.order.mappeur.OrderMapper' in your configuration.
+
+2026-04-09 20:55:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 20:55:54 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.10 with PID 17524 (C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes started by LENOVO in C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 20:55:54 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 20:55:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 20:55:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 20:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 300 ms. Found 1 JPA repository interface.
+2026-04-09 20:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 20:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 20:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 20:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2026-04-09 20:55:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 20:55:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 20:55:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 20:55:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 20:55:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 20:55:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 20:55:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4504 ms
+2026-04-09 20:55:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 20:55:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55c03e4
+2026-04-09 20:55:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 20:56:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 20:56:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 20:56:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 20:56:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 20:56:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 20:56:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 20:56:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 20:56:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 20:56:04 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes\com\microservices\order\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService' defined in file [C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes\com\microservices\order\service\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.microservices.order.mappeur.OrderMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-04-09 20:56:04 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:267)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:460)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1163)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:668)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:625)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:584)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:640)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.microservices.order.OrderServiceApplication.main(OrderServiceApplication.java:11)
+2026-04-09 20:56:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 20:56:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-09 20:56:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-09 20:56:04 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-09 20:56:04 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-09 20:56:04 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.microservices.order.service.OrderService required a bean of type 'com.microservices.order.mappeur.OrderMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.order.mappeur.OrderMapper' in your configuration.
+
+2026-04-09 21:01:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-09 21:01:25 [main] INFO  c.m.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.10 with PID 10652 (C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service\target\classes started by LENOVO in C:\Users\LENOVO\IdeaProjects\Microservices-Final\order-service)
+2026-04-09 21:01:25 [main] INFO  c.m.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-09 21:01:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 21:01:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-09 21:01:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 341 ms. Found 1 JPA repository interface.
+2026-04-09 21:01:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-09 21:01:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-09 21:01:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.microservices.order.repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-04-09 21:01:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2026-04-09 21:01:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fb2effde-b148-3680-b4d8-1822c4c5c713
+2026-04-09 21:01:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-04-09 21:01:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-04-09 21:01:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-09 21:01:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-04-09 21:01:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-09 21:01:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5263 ms
+2026-04-09 21:01:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-09 21:01:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@604f376a
+2026-04-09 21:01:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-09 21:01:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-09 21:01:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-04-09 21:01:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-09 21:01:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-09 21:01:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-09 21:01:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-09 21:01:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-09 21:01:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-09 21:01:39 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-04-09 21:01:39 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = order-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-04-09 21:01:40 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.1
+2026-04-09 21:01:40 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 70d6ff42debf7e17
+2026-04-09 21:01:40 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1775768500014
+2026-04-09 21:01:41 [kafka-admin-client-thread | order-service-admin-0] WARN  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=order-service-admin-0] The DescribeTopicPartitions API is not supported, using Metadata API to describe topics.
+2026-04-09 21:01:41 [main] INFO  o.s.kafka.core.KafkaAdmin - Topic 'order-events' exists but has a different partition count: 1 not 3, increasing if the broker supports it
+2026-04-09 21:01:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for order-service-admin-0 unregistered
+2026-04-09 21:01:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2026-04-09 21:01:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-04-09 21:01:41 [kafka-admin-client-thread | order-service-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2026-04-09 21:01:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-04-09 21:01:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-04-09 21:01:42 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-04-09 21:01:42 [main] INFO  c.m.order.OrderServiceApplication - Started OrderServiceApplication in 19.789 seconds (process running for 21.966)
+2026-04-09 21:13:32 [http-nio-8082-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-09 21:13:32 [http-nio-8082-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-09 21:13:32 [http-nio-8082-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-09 21:13:33 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:13:33 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:13:33 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:13:33 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:13:37 [http-nio-8082-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:13:37 [http-nio-8082-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:13:37 [http-nio-8082-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:13:37 [http-nio-8082-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:15:06 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:15:06 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:15:06 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:15:06 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:19:53 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:19:53 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:19:53 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:19:53 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:03 [http-nio-8082-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:03 [http-nio-8082-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:03 [http-nio-8082-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:03 [http-nio-8082-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:07 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:07 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:07 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:07 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:24 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:24 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:24 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:24 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:27 [http-nio-8082-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:27 [http-nio-8082-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:20:27 [http-nio-8082-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:20:27 [http-nio-8082-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:22:10 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:22:10 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:22:10 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:22:10 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:22:42 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:22:42 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:22:42 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:22:42 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:30:00 [http-nio-8082-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:30:00 [http-nio-8082-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:30:00 [http-nio-8082-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:30:00 [http-nio-8082-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:30:03 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:30:03 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:30:03 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:30:03 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:30:05 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:30:05 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:30:05 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:30:05 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:31:04 [http-nio-8082-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:31:04 [http-nio-8082-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:31:04 [http-nio-8082-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:31:04 [http-nio-8082-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:31:46 [http-nio-8082-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:31:46 [http-nio-8082-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:31:46 [http-nio-8082-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:31:46 [http-nio-8082-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:37:54 [http-nio-8082-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:37:54 [http-nio-8082-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:37:54 [http-nio-8082-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:37:54 [http-nio-8082-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:01 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:01 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:01 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:01 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:13 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:13 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:13 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:13 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:16 [http-nio-8082-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:16 [http-nio-8082-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:16 [http-nio-8082-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:16 [http-nio-8082-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:54 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:54 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:38:54 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:38:54 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:28 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:28 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:28 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:28 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:36 [http-nio-8082-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:36 [http-nio-8082-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:36 [http-nio-8082-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:36 [http-nio-8082-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:37 [http-nio-8082-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:37 [http-nio-8082-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:37 [http-nio-8082-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:37 [http-nio-8082-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:38 [http-nio-8082-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:38 [http-nio-8082-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:38 [http-nio-8082-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:38 [http-nio-8082-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:40 [http-nio-8082-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:40 [http-nio-8082-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:42:40 [http-nio-8082-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:42:40 [http-nio-8082-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:43:20 [http-nio-8082-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:43:20 [http-nio-8082-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:43:20 [http-nio-8082-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:43:20 [http-nio-8082-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:45:17 [http-nio-8082-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:45:17 [http-nio-8082-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:45:17 [http-nio-8082-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:45:17 [http-nio-8082-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:46:16 [http-nio-8082-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:46:16 [http-nio-8082-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:46:16 [http-nio-8082-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:46:16 [http-nio-8082-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:46:19 [http-nio-8082-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:46:19 [http-nio-8082-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
+2026-04-09 21:46:19 [http-nio-8082-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-04-09 21:46:19 [http-nio-8082-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "t_orders" does not exist
+  Position: 134
